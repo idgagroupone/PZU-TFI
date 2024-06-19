@@ -1,7 +1,7 @@
 # Dokumentacja dataLayer dla eventów na serwisie www.inpzu.pl
 
 Prośba o wstawienie poniższych DataLayer na strony w obrębie serwisu www.inpzu.pl.
-
+___
 
 ## EVENTY W STRUKTURZE ECOMMERCE
 ### 1) Wyświetlenie listingu produktów - wywołanie eventu view_item_list
@@ -298,21 +298,24 @@ dataLayer.push({
 ```
 
 
-///////////////////////////////////////////////////////////
-1) Ścieżka zakupowa dla IKE, IKZE oraz IKE i IKZE razem
-a) Konto w innej instytucji finansowej
+
+___
+
+## 1) Ścieżka zakupowa dla IKE, IKZE oraz IKE i IKZE razem
+### a) Konto w innej instytucji finansowej
 Prośba o wywołanie kodu na kliknięcie w przycisk TAK lub NIE w odpowiedzi na pytanie "Czy posiadasz już konto w innej instytucji finansowej?" na stronach:
 •	inpzu.pl/tfi/ikze-wniosek
 •	inpzu.pl/tfi/ike-wniosek
 •	inpzu.pl/tfi/ike-ikze-wniosek
- 
+
+``` javascript
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({
   "event": "konto_w_innej_instytucji", 
   "produkt": "[NAZWA KONTA EMERYTALNEGO]" // zmienna przekazująca nazwę konta emerytalnego, którego dotyczy wybrana ścieżka, np: IKE, IKZE, IKE_IKZE
   "udzielona_odpowiedź": "[WYBRANA ODPOWIEDŹ]" // zmienna przekazująca wybraną odpowiedź, np: TAK, NIE
 });
-
+```
 
 
 
