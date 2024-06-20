@@ -24,7 +24,7 @@ dataLayer.push({
       item_id: "SKU_12345", // id produktu, jeżeli jest dostępne
       item_name: "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu dostępnego na listingu, np. inPZU Puls Życia 2025 - pole obowiązkowe
       index: 0, // numer produktu na listingu
-      item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu produktu, np. TFI
+      item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu produktu, np. IKE
       item_category: "[NAZWA KATEGORII]", // zmienna przekazująca nazwę kategorii produktu, np. Fundusz cyklu życia
       item_category2: "[NAZWA KATEGORII 2]", // zmienna przekazująca nazwę kategorii 2 produktu, jeżeli jest dostępna
       item_category3: "[NAZWA KATEGORII 3]", // zmienna przekazująca nazwę kategorii 3 produktu, jeżeli jest dostępna
@@ -37,7 +37,7 @@ dataLayer.push({
       item_id: "SKU_12346", // id drugiego produktu w tablicy, jeżeli jest dostępne 
       item_name: "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę drugiego produktu dostępnego na listingu, np.inPZU Puls Życia 2030 - pole obowiązkowe
       index: 1, // numer produktu na listingu
-      item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu produktu, np. TFI
+      item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu produktu, np. IKE
       item_category: "[NAZWA KATEGORII]", // zmienna przekazująca nazwę kategorii drugiego produktu, np. Fundusz cyklu życia
       item_category2: "[NAZWA KATEGORII 2]", // zmienna przekazująca nazwę kategorii 2 drugiego produktu, jeżeli jest dostępna
       item_category3: "[NAZWA KATEGORII 3]", // zmienna przekazująca nazwę kategorii 3 drugiego produktu, jeżeli jest dostępna
@@ -68,7 +68,7 @@ dataLayer.push({
       item_id: "SKU_12345", // id produktu, jeżeli jest dostępne
       item_name: "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, dla którego został kliknięty przycisk "KUP" lub "KUP ONLINE" np. inPZU Puls Życia 2025 - pole obowiązkowe
       index: 0, // numer produktu na listingu
-      item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. TFI
+      item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. IKE
       item_category: "[NAZWA KATEGORII]", // zmienna przekazująca nazwę kategorii produktu, np. Fundusz cyklu życia
       item_category2: "[NAZWA KATEGORII 2]", // zmienna przekazująca nazwę kategorii 2 produktu, jeżeli jest dostępna
       item_category3: "[NAZWA KATEGORII 3]", // zmienna przekazująca nazwę kategorii 3 produktu, jeżeli jest dostępna
@@ -100,7 +100,7 @@ dataLayer.push({
       item_id: "SKU_12345", // id produktu, jeżeli jest dostępne
       item_name: "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, dla którego została wyświetlona karta produktu np. inPZU Puls Życia 2025 - pole obowiązkowe
       index: 0, // numer produktu na listingu
-      item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. TFI
+      item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. IKE
       item_category: "[NAZWA KATEGORII]", // zmienna przekazująca nazwę kategorii produktu, np. Fundusz cyklu życia
       item_category2: "[NAZWA KATEGORII 2]", // zmienna przekazująca nazwę kategorii 2 produktu, jeżeli jest dostępna
       item_category3: "[NAZWA KATEGORII 3]", // zmienna przekazująca nazwę kategorii 3 produktu, jeżeli jest dostępna
@@ -134,7 +134,7 @@ dataLayer.push({
       item_id: "SKU_12345", // id produktu, jeżeli jest dostępne
       item_name: "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, dla którego została wyświetlona karta produktu np. inPZU Puls Życia 2025 - pole obowiązkowe
       index: 0, // numer produktu na listingu
-      item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. TFI
+      item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. IKE
       item_category: "[NAZWA KATEGORII]", // zmienna przekazująca nazwę kategorii produktu, np. Fundusz cyklu życia
       item_category2: "[NAZWA KATEGORII 2]", // zmienna przekazująca nazwę kategorii 2 produktu, jeżeli jest dostępna
       item_category3: "[NAZWA KATEGORII 3]", // zmienna przekazująca nazwę kategorii 3 produktu, jeżeli jest dostępna
@@ -171,7 +171,7 @@ dataLayer.push({
       coupon: "[NAZWA UŻYTEGO KODU SPECJALNEGO]", // zmienna przekazująca nazwę kodu specjalnego uzupełnionego przez użytkownika
       discount: 00.00, // kwota udzielonego rabatu związanego z zastosowaniem kodu specjalnego
       index: 0, // numer produktu na listingu
-      item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. TFI
+      item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. IKE
       item_category: "[NAZWA KATEGORII]", // zmienna przekazująca nazwę kategorii produktu, np. Fundusz cyklu życia
       item_category2: "[NAZWA KATEGORII 2]", // zmienna przekazująca nazwę kategorii 2 produktu, jeżeli jest dostępna
       item_category3: "[NAZWA KATEGORII 3]", // zmienna przekazująca nazwę kategorii 3 produktu, jeżeli jest dostępna
@@ -208,7 +208,7 @@ dataLayer.push({
       item_name: "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, dla którego została wyświetlona karta produktu np. inPZU Puls Życia 2025 - pole obowiązkowe
       discount: 00.00, // kwota udzielonego rabatu związanego z zastosowaniem kodu specjalnego
       index: 0, // numer produktu na listingu
-      item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. TFI
+      item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. IKE
       item_category: "[NAZWA KATEGORII]", // zmienna przekazująca nazwę kategorii produktu, np. Fundusz cyklu życia
       item_category2: "[NAZWA KATEGORII 2]", // zmienna przekazująca nazwę kategorii 2 produktu, jeżeli jest dostępna
       item_category3: "[NAZWA KATEGORII 3]", // zmienna przekazująca nazwę kategorii 3 produktu, jeżeli jest dostępna
@@ -244,7 +244,7 @@ dataLayer.push({
       item_name: "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, dla którego została wyświetlona karta produktu np. inPZU Puls Życia 2025 - pole obowiązkowe
       discount: 00.00, // kwota udzielonego rabatu związanego z zastosowaniem kodu specjalnego
       index: 0, // numer produktu na listingu
-      item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. TFI
+      item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. IKE
       item_category: "[NAZWA KATEGORII]", // zmienna przekazująca nazwę kategorii produktu, np. Fundusz cyklu życia
       item_category2: "[NAZWA KATEGORII 2]", // zmienna przekazująca nazwę kategorii 2 produktu, jeżeli jest dostępna
       item_category3: "[NAZWA KATEGORII 3]", // zmienna przekazująca nazwę kategorii 3 produktu, jeżeli jest dostępna
@@ -281,7 +281,7 @@ dataLayer.push({
       item_name: "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, dla którego została wyświetlona karta produktu np. inPZU Puls Życia 2025 - pole obowiązkowe
       discount: 00.00, // kwota udzielonego rabatu związanego z zastosowaniem kodu specjalnego
       index: 0, // numer produktu na listingu
-      item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. TFI
+      item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. IKE
       item_category: "[NAZWA KATEGORII]", // zmienna przekazująca nazwę kategorii produktu, np. Fundusz cyklu życia
       item_category2: "[NAZWA KATEGORII 2]", // zmienna przekazująca nazwę kategorii 2 produktu, jeżeli jest dostępna
       item_category3: "[NAZWA KATEGORII 3]", // zmienna przekazująca nazwę kategorii 3 produktu, jeżeli jest dostępna
