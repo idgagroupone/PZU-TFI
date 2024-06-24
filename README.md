@@ -303,9 +303,8 @@ ___
 
 
 ## EVENTY W STRUKTURZE NIE ECOMMERCE
-## 1) Ścieżka zakupowa dla IKE, IKZE
 
-### a) wybór odpowiedzi "TAK" na formularzu
+### 1) wybór odpowiedzi "TAK" na formularzu
 Prośba o wywołanie kodu na kliknięcie w przycisk "TAK" w odpowiedzi na pytanie "Czy posiadasz już konto w innej instytucji finansowej?" na stronach:
 * inpzu.pl/tfi/ikze-wniosek
 * inpzu.pl/tfi/ike-wniosek
@@ -325,7 +324,7 @@ dataLayer.push({
 });
 ```
 
-### b) wybór odpowiedzi "NIE" na formularzu
+### 2) wybór odpowiedzi "NIE" na formularzu
 Prośba o wywołanie kodu na kliknięcie w przycisk "NIE" w odpowiedzi na pytanie "Czy posiadasz już konto w innej instytucji finansowej?" na stronach:
 * inpzu.pl/tfi/ikze-wniosek
 * inpzu.pl/tfi/ike-wniosek
@@ -345,7 +344,7 @@ dataLayer.push({
 });
 ```
 
-### c) wybór odpowiedzi "TAK, PRZENOSZĘ" na formularzu
+### 3) wybór odpowiedzi "TAK, PRZENOSZĘ" na formularzu
 Prośba o wywołanie kodu na kliknięcie w przycisk "TAK, PRZENOSZĘ" w odpowiedzi na pytanie "Czy chcesz przenieść z innej instytucji finansowej?" na stronach:
 * inpzu.pl/tfi/ikze-wniosek
 * inpzu.pl/tfi/ike-wniosek
@@ -364,7 +363,7 @@ dataLayer.push({
 });
 ```
 
-### d) wybór odpowiedzi "NIE, NIE PRZENOSZĘ" na formularzu
+### 4) wybór odpowiedzi "NIE, NIE PRZENOSZĘ" na formularzu
 Prośba o wywołanie kodu na kliknięcie w przycisk "NIE, NIE PRZENOSZĘ" w odpowiedzi na pytanie "Czy chcesz przenieść z innej instytucji finansowej?" na stronach:
 * inpzu.pl/tfi/ikze-wniosek
 * inpzu.pl/tfi/ike-wniosek
@@ -383,7 +382,7 @@ dataLayer.push({
 });
 ```
 
-### e) kliknięcie w przycisk "KUP"
+### 5) kliknięcie w przycisk "KUP"
 Prośba o wywołanie kodu na kliknięcie w przycisk "KUP" na stronach ze ścieżką, gdzie przycisk jest dostępny
 
 ![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/eb92f011-40ea-42de-be33-3b37632d3e09)
@@ -401,10 +400,11 @@ dataLayer.push({
 });
 ```
 
-### f) kliknięcie w przycisk "DOWIEDZ SIĘ WIĘCEJ"
+### 6) kliknięcie w przycisk "DOWIEDZ SIĘ WIĘCEJ"
 Prośba o wywołanie kodu na kliknięcie w przycisk "DOWIEDZ SIĘ WIĘCEJ" na stronach ze ścieżką, gdzie przycisk jest dostępny
 
-![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/eb92f011-40ea-42de-be33-3b37632d3e09)
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/5ece964a-7ea3-4ae9-9d1a-aa1387a0b2e8)
+
 
 ``` javascript
 window.dataLayer = window.dataLayer || [];
@@ -412,8 +412,64 @@ dataLayer.push({
   "event": "click_button_WIECEJ",
   "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca kliknięty tekst, tu "DOWIEDZ SIĘ WIĘCEJ"
   "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, np. "Wybierz fundusze do IKE", "Poznaj nasze portfele modelowe"
-  "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "nPZU Puls Życia 2025", "Portfel Obligacyjny"
+  "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "inPZU Puls Życia 2025", "Portfel Obligacyjny"
   "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "Portfel modelowy"
+  "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, np. "Fundusz Cyklu Życia", "Fundusz indeksowy"
+  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+});
+```
+
+### 7) kliknięcie w przycisk "dodaj do porównania"
+Prośba o wywołanie kodu na kliknięcie w przycisk "dodaj do porównania" na stronach ze ścieżką, gdzie przycisk jest dostępny
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/0ad892d0-e9cf-4ecd-a523-f310adbddd09)
+
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_button_POROWNAJ",
+  "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca kliknięty tekst, tu "dodaj do porównania"
+  "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, np. "Wybierz fundusze do IKE", "Fundusze indeksowe i cyklu życia"
+  "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "inPZU Puls Życia 2025", "PZU Globalny Obligacji Korporacyjnych"
+  "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "Fundusze indeksowe i cyklu życia"
+  "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, np. "Fundusz Cyklu Życia", "Fundusz indeksowy"
+  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+});
+```
+
+### 8) kliknięcie w przycisk z nazwą produktu
+Prośba o wywołanie kodu na kliknięcie w przycisk z nazwą produktu na stronach ze ścieżką, gdzie przycisk jest dostępny
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/0792f7f3-56bc-4873-9cb5-38a60fb88b7f)
+
+
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_button_PRODUKT",
+  "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca kliknięty tekst, np "inPZU Puls Życia 2025"
+  "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, np. "Wybierz fundusze do IKE", "Fundusze indeksowe i cyklu życia"
+  "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "inPZU Puls Życia 2025", "PZU Globalny Obligacji Korporacyjnych"
+  "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "Fundusze indeksowe i cyklu życia"
+  "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, np. "Fundusz Cyklu Życia", "Fundusz indeksowy"
+  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+});
+```
+
+### 9) kliknięcie w przycisk "PODAJ KWOTĘ"
+Prośba o wywołanie kodu na kliknięcie w przycisk "PODAJ KWOTĘ" na stronach ze ścieżką, gdzie przycisk jest dostępny
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/3bbb685d-56f6-4da2-b89f-a11b6787c331)
+
+
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_button_KWOTA",
+  "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca kliknięty tekst, tu "PODAJ KWOTĘ"
+  "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, np. "Wybierz fundusze do IKE", "Fundusze indeksowe i cyklu życia"
+  "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "inPZU Puls Życia 2025", "PZU Globalny Obligacji Korporacyjnych"
+  "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "Fundusze indeksowe i cyklu życia"
   "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, np. "Fundusz Cyklu Życia", "Fundusz indeksowy"
   "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
 });
