@@ -301,24 +301,123 @@ dataLayer.push({
 
 ___
 
-## 1) Ścieżka zakupowa dla IKE, IKZE oraz IKE i IKZE razem
-### a) Konto w innej instytucji finansowej
-Prośba o wywołanie kodu na kliknięcie w przycisk TAK lub NIE w odpowiedzi na pytanie "Czy posiadasz już konto w innej instytucji finansowej?" na stronach:
-•	inpzu.pl/tfi/ikze-wniosek
-•	inpzu.pl/tfi/ike-wniosek
-•	inpzu.pl/tfi/ike-ikze-wniosek
+
+## EVENTY W STRUKTURZE NIE ECOMMERCE
+## 1) Ścieżka zakupowa dla IKE, IKZE
+
+### a) wybór odpowiedzi "TAK" na formularzu
+Prośba o wywołanie kodu na kliknięcie w przycisk "TAK" w odpowiedzi na pytanie "Czy posiadasz już konto w innej instytucji finansowej?" na stronach:
+* inpzu.pl/tfi/ikze-wniosek
+* inpzu.pl/tfi/ike-wniosek
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/f1851de7-4d2b-429d-b05e-4d0286149301)
+
 
 ``` javascript
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({
-  "event": "konto_w_innej_instytucji", 
-  "produkt": "[NAZWA KONTA EMERYTALNEGO]" // zmienna przekazująca nazwę konta emerytalnego, którego dotyczy wybrana ścieżka, np: IKE, IKZE, IKE_IKZE
-  "udzielona_odpowiedź": "[WYBRANA ODPOWIEDŹ]" // zmienna przekazująca wybraną odpowiedź, np: TAK, NIE
+  "event": "click_button_TAK",
+  "click_text": "[NAZWA TESKTU], //zmienna przekazująca kliknięty tekst, tu: "TAK"
+  "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, czyli "Czy posiadasz już IKE w innej instytucji finansowej?" lub "Czy posiadasz już IKZE w innej instytucji finansowej?"
+  "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, czyli np: "IKE" lub "IKZE"
+  "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "IKZE"
+  "step": "0a", 
 });
 ```
 
+### b) wybór odpowiedzi "NIE" na formularzu
+Prośba o wywołanie kodu na kliknięcie w przycisk "NIE" w odpowiedzi na pytanie "Czy posiadasz już konto w innej instytucji finansowej?" na stronach:
+* inpzu.pl/tfi/ikze-wniosek
+* inpzu.pl/tfi/ike-wniosek
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/f1851de7-4d2b-429d-b05e-4d0286149301)
 
 
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_button_NIE",
+  "click_text": "[NAZWA TESKTU], //zmienna przekazująca kliknięty tekst, tu: "NIE"
+  "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, czyli "Czy posiadasz już IKE w innej instytucji finansowej?" lub "Czy posiadasz już IKZE w innej instytucji finansowej?"
+  "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, czyli np: "IKE" lub "IKZE"
+  "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "IKZE"
+  "step": "0a"
+});
+```
+
+### c) wybór odpowiedzi "TAK, PRZENOSZĘ" na formularzu
+Prośba o wywołanie kodu na kliknięcie w przycisk "TAK, PRZENOSZĘ" w odpowiedzi na pytanie "Czy chcesz przenieść z innej instytucji finansowej?" na stronach:
+* inpzu.pl/tfi/ikze-wniosek
+* inpzu.pl/tfi/ike-wniosek
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/09073a89-3cd6-471a-bf9c-cdce73c7f764)
+
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_button_TAK",
+  "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca kliknięty tekst, np. "Tak, przenoszę IKE" lub "Tak, przenoszę IKZE"
+  "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, czyli "Czy chcesz przenieść IKE z innej instytucji finansowej?" lub "Czy chcesz przenieść IKZE z innej instytucji finansowej?"
+  "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, czyli np: "IKE" lub "IKZE"
+  "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "IKZE"
+  "step": "0a"
+});
+```
+
+### d) wybór odpowiedzi "NIE, NIE PRZENOSZĘ" na formularzu
+Prośba o wywołanie kodu na kliknięcie w przycisk "NIE, NIE PRZENOSZĘ" w odpowiedzi na pytanie "Czy chcesz przenieść z innej instytucji finansowej?" na stronach:
+* inpzu.pl/tfi/ikze-wniosek
+* inpzu.pl/tfi/ike-wniosek
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/09073a89-3cd6-471a-bf9c-cdce73c7f764)
+
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_button_NIE",
+  "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca kliknięty tekst, np. "NIE, NIE PRZENOSZĘ"
+  "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, czyli "Czy chcesz przenieść IKE z innej instytucji finansowej?" lub "Czy chcesz przenieść IKZE z innej instytucji finansowej?"
+  "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, czyli np: "IKE" lub "IKZE"
+  "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "IKZE"
+  "step": "0a"
+});
+```
+
+### e) kliknięcie w przycisk "KUP"
+Prośba o wywołanie kodu na kliknięcie w przycisk "KUP" na stronach ze ścieżką, gdzie przycisk jest dostępny
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/eb92f011-40ea-42de-be33-3b37632d3e09)
+
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_button_KUP",
+  "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca kliknięty tekst, tu "KUP"
+  "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, np. "Wybierz fundusze do IKE", "Karta funduszy indeksowych"
+  "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "IKE", "Portfel Obligacyjny"
+  "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "Portfel modelowy"
+  "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, np. "Fundusz Cyklu Życia", "Fundusz indeksowy"
+  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+});
+```
+
+### f) kliknięcie w przycisk "DOWIEDZ SIĘ WIĘCEJ"
+Prośba o wywołanie kodu na kliknięcie w przycisk "DOWIEDZ SIĘ WIĘCEJ" na stronach ze ścieżką, gdzie przycisk jest dostępny
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/eb92f011-40ea-42de-be33-3b37632d3e09)
+
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_button_WIECEJ",
+  "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca kliknięty tekst, tu "DOWIEDZ SIĘ WIĘCEJ"
+  "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, np. "Wybierz fundusze do IKE", "Poznaj nasze portfele modelowe"
+  "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "nPZU Puls Życia 2025", "Portfel Obligacyjny"
+  "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "Portfel modelowy"
+  "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, np. "Fundusz Cyklu Życia", "Fundusz indeksowy"
+  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+});
+```
 
 
 
