@@ -19,6 +19,7 @@ dataLayer.push({
   ecommerce: {
     item_list_id: "123", // id listingu, jeżeli jest dostępne
     item_list_name: "[NAZWA KATEGORII FUNDUSZU/PORTFELA]", // zmienna przekazująca nazwę kategorii funduszu, którego dotyczy listing. Wartość pobierana z góry strony, np. IKE
+    step: "[KROK ŚCIEŻKI]", // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
     items: [
      {
       item_id: "SKU_12345", // id produktu, jeżeli jest dostępne
@@ -26,12 +27,12 @@ dataLayer.push({
       index: 0, // numer produktu na listingu
       item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu produktu, np. IKE
       item_category: "[NAZWA KATEGORII]", // zmienna przekazująca nazwę kategorii produktu, np. Fundusz cyklu życia
-      item_category2: "[NAZWA KATEGORII 2]", // zmienna przekazująca nazwę kategorii 2 produktu, jeżeli jest dostępna
-      item_category3: "[NAZWA KATEGORII 3]", // zmienna przekazująca nazwę kategorii 3 produktu, jeżeli jest dostępna
-      item_category4: "[NAZWA KATEGORII 4]", // zmienna przekazująca nazwę kategorii 4 produktu, jeżeli jest dostępna
-      item_category5: "[NAZWA KATEGORII 5]", // zmienna przekazująca nazwę kategorii 5 produktu, jeżeli jest dostępna
+      item_category2: "[TYP FUNDUSZU]", // zmienna przekazująca typ funduszu wybranego produktu, np. "Cyklu życia", "Krótkoterm. instrum. Dłużnych",
+      "Obligacyjny"
+      item_category3: "[POZIOM RYZYKA]", // zmienna przekazująca poziom ryzyka wybranego produktu, np. "Niskie", "Średnioniskie"
       price: 00.00,
-      quantity: 1 // liczba produktów
+      quantity: 1, // liczba produktów
+      unit_price: [CENA JEDNOSTKI] // zmienna przekazująca cenę jednostki danego produktu
     },
     {
       item_id: "SKU_12346", // id drugiego produktu w tablicy, jeżeli jest dostępne 
@@ -39,12 +40,12 @@ dataLayer.push({
       index: 1, // numer produktu na listingu
       item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu produktu, np. IKE
       item_category: "[NAZWA KATEGORII]", // zmienna przekazująca nazwę kategorii drugiego produktu, np. Fundusz cyklu życia
-      item_category2: "[NAZWA KATEGORII 2]", // zmienna przekazująca nazwę kategorii 2 drugiego produktu, jeżeli jest dostępna
-      item_category3: "[NAZWA KATEGORII 3]", // zmienna przekazująca nazwę kategorii 3 drugiego produktu, jeżeli jest dostępna
-      item_category4: "[NAZWA KATEGORII 4]", // zmienna przekazująca nazwę kategorii 4 drugiego produktu, jeżeli jest dostępna
-      item_category5: "[NAZWA KATEGORII 5]", // zmienna przekazująca nazwę kategorii 5 drugiego produktu, jeżeli jest dostępna
+      item_category2: "[TYP FUNDUSZU]", // zmienna przekazująca typ funduszu wybranego drugiego produktu, np. "Cyklu życia", "Krótkoterm. instrum. Dłużnych",
+      "Obligacyjny"
+      item_category3: "[POZIOM RYZYKA]", // zmienna przekazująca poziom ryzyka wybranego drugiego produktu, np. "Niskie", "Średnioniskie"
       price: 00.00,
-      quantity: 1 // liczba produktów
+      quantity: 1, // liczba produktów
+      unit_price: [CENA JEDNOSTKI] // zmienna przekazująca cenę jednostki danego produktu
     }]
   }
 });
@@ -63,6 +64,7 @@ dataLayer.push({
   ecommerce: {
     item_list_id: "123", // id listingu, jeżeli jest dostępne
     item_list_name: "[NAZWA KATEGORII FUNDUSZU/PORTFELA]", // zmienna przekazująca nazwę kategorii funduszu, którego dotyczy listing. Wartość pobierana z góry strony, np. IKE
+    step: "[KROK ŚCIEŻKI]", // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
     items: [
     {
       item_id: "SKU_12345", // id produktu, jeżeli jest dostępne
@@ -70,12 +72,12 @@ dataLayer.push({
       index: 0, // numer produktu na listingu
       item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. IKE
       item_category: "[NAZWA KATEGORII]", // zmienna przekazująca nazwę kategorii produktu, np. Fundusz cyklu życia
-      item_category2: "[NAZWA KATEGORII 2]", // zmienna przekazująca nazwę kategorii 2 produktu, jeżeli jest dostępna
-      item_category3: "[NAZWA KATEGORII 3]", // zmienna przekazująca nazwę kategorii 3 produktu, jeżeli jest dostępna
-      item_category4: "[NAZWA KATEGORII 4]", // zmienna przekazująca nazwę kategorii 4 produktu, jeżeli jest dostępna
-      item_category5: "[NAZWA KATEGORII 5]", // zmienna przekazująca nazwę kategorii 5 produktu, jeżeli jest dostępna
+      item_category2: "[TYP FUNDUSZU]", // zmienna przekazująca typ funduszu wybranego produktu, np. "Cyklu życia", "Krótkoterm. instrum. Dłużnych",
+      "Obligacyjny"
+      item_category3: "[POZIOM RYZYKA]", // zmienna przekazująca poziom ryzyka wybranego produktu, np. "Niskie", "Średnioniskie"
       price: 00.00,
-      quantity: 1 // liczba produktów
+      quantity: 1, // liczba produktów
+      unit_price: [CENA JEDNOSTKI] // zmienna przekazująca cenę jednostki danego produktu
     }
     ]
   }
@@ -95,6 +97,7 @@ dataLayer.push({
   ecommerce: {
     currency: "PLN", // pole obowiązkowe
     value: 00.00, // pole obowiązkowe
+    step: "[KROK ŚCIEŻKI]", // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
     items: [
     {
       item_id: "SKU_12345", // id produktu, jeżeli jest dostępne
@@ -102,14 +105,14 @@ dataLayer.push({
       index: 0, // numer produktu na listingu
       item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. IKE
       item_category: "[NAZWA KATEGORII]", // zmienna przekazująca nazwę kategorii produktu, np. Fundusz cyklu życia
-      item_category2: "[NAZWA KATEGORII 2]", // zmienna przekazująca nazwę kategorii 2 produktu, jeżeli jest dostępna
-      item_category3: "[NAZWA KATEGORII 3]", // zmienna przekazująca nazwę kategorii 3 produktu, jeżeli jest dostępna
-      item_category4: "[NAZWA KATEGORII 4]", // zmienna przekazująca nazwę kategorii 4 produktu, jeżeli jest dostępna
-      item_category5: "[NAZWA KATEGORII 5]", // zmienna przekazująca nazwę kategorii 5 produktu, jeżeli jest dostępna
+      item_category2: "[TYP FUNDUSZU]", // zmienna przekazująca typ funduszu wybranego produktu, np. "Cyklu życia", "Krótkoterm. instrum. Dłużnych",
+      "Obligacyjny"
+      item_category3: "[POZIOM RYZYKA]", // zmienna przekazująca poziom ryzyka wybranego produktu, np. "Niskie", "Średnioniskie"
       item_list_id: "123", // id listingu, jeżeli jest dostępne
       item_list_name: "[NAZWA KATEGORII FUNDUSZU/PORTFELA]", // zmienna przekazująca nazwę kategorii funduszu, którego dotyczy listing, np. IKE
       price: 00.00,
-      quantity: 1
+      quantity: 1,
+      unit_price: [CENA JEDNOSTKI] // zmienna przekazująca cenę jednostki danego produktu
     }
     ]
   }
@@ -129,6 +132,7 @@ dataLayer.push({
   ecommerce: {
     currency: "PLN", // pole obowiązkowe
     value: 100.00, // zmienna przekazująca kwotę inwestycji liczona jako price * quantity. Pole obowiązkowe
+    step: "[KROK ŚCIEŻKI]", // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
     items: [
     {
       item_id: "SKU_12345", // id produktu, jeżeli jest dostępne
@@ -136,14 +140,14 @@ dataLayer.push({
       index: 0, // numer produktu na listingu
       item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. IKE
       item_category: "[NAZWA KATEGORII]", // zmienna przekazująca nazwę kategorii produktu, np. Fundusz cyklu życia
-      item_category2: "[NAZWA KATEGORII 2]", // zmienna przekazująca nazwę kategorii 2 produktu, jeżeli jest dostępna
-      item_category3: "[NAZWA KATEGORII 3]", // zmienna przekazująca nazwę kategorii 3 produktu, jeżeli jest dostępna
-      item_category4: "[NAZWA KATEGORII 4]", // zmienna przekazująca nazwę kategorii 4 produktu, jeżeli jest dostępna
-      item_category5: "[NAZWA KATEGORII 5]", // zmienna przekazująca nazwę kategorii 5 produktu, jeżeli jest dostępna
+      item_category2: "[TYP FUNDUSZU]", // zmienna przekazująca typ funduszu wybranego produktu, np. "Cyklu życia", "Krótkoterm. instrum. Dłużnych",
+      "Obligacyjny"
+      item_category3: "[POZIOM RYZYKA]", // zmienna przekazująca poziom ryzyka wybranego produktu, np. "Niskie", "Średnioniskie"
       item_list_id: "123", // id listingu, jeżeli jest dostępne
       item_list_name: "[NAZWA KATEGORII FUNDUSZU/PORTFELA]", // zmienna przekazująca nazwę kategorii funduszu, którego dotyczy listing, np. IKE
-      price: 100.00, // zmienna przekazująca kwotę inwestycji w dany produkt. Jeżeli został wybrany więcej niż jeden produkt kwotę należy wyliczyć dla jednego określonego produktu, tj. kwota wpisana przez użytkownika * procent inwestycji danego produktu.
-      quantity: 1
+      price: 100.00, // zmienna przekazująca kwotę inwestycji w dany produkt. Jeżeli został wybrany więcej niż jeden produkt kwotę należy wyliczyć dla jednego określonego produktu, tj. kwota wpisana przez użytkownika *         procent inwestycji danego produktu.
+      quantity: 1,
+      unit_price: [CENA JEDNOSTKI] // zmienna przekazująca cenę jednostki danego produktu
     }
     ]
   }
@@ -164,6 +168,7 @@ dataLayer.push({
   ecommerce: {
     currency: "PLN", // pole obowiązkowe
     value: 100.00, // zmienna przekazująca kwotę inwestycji liczona jako price * quantity. Pole obowiązkowe
+    step: "[KROK ŚCIEŻKI]", // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
     items: [
     {
       item_id: "SKU_12345", // id produktu, jeżeli jest dostępne
@@ -173,14 +178,14 @@ dataLayer.push({
       index: 0, // numer produktu na listingu
       item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. IKE
       item_category: "[NAZWA KATEGORII]", // zmienna przekazująca nazwę kategorii produktu, np. Fundusz cyklu życia
-      item_category2: "[NAZWA KATEGORII 2]", // zmienna przekazująca nazwę kategorii 2 produktu, jeżeli jest dostępna
-      item_category3: "[NAZWA KATEGORII 3]", // zmienna przekazująca nazwę kategorii 3 produktu, jeżeli jest dostępna
-      item_category4: "[NAZWA KATEGORII 4]", // zmienna przekazująca nazwę kategorii 4 produktu, jeżeli jest dostępna
-      item_category5: "[NAZWA KATEGORII 5]", // zmienna przekazująca nazwę kategorii 5 produktu, jeżeli jest dostępna
+      item_category2: "[TYP FUNDUSZU]", // zmienna przekazująca typ funduszu wybranego produktu, np. "Cyklu życia", "Krótkoterm. instrum. Dłużnych",
+      "Obligacyjny"
+      item_category3: "[POZIOM RYZYKA]", // zmienna przekazująca poziom ryzyka wybranego produktu, np. "Niskie", "Średnioniskie"
       item_list_id: "123", // id listingu, jeżeli jest dostępne
       item_list_name: "[NAZWA KATEGORII FUNDUSZU/PORTFELA]", // zmienna przekazująca nazwę kategorii funduszu, którego dotyczy listing, np. IKE
       price: 100.00, // zmienna przekazująca kwotę inwestycji w dany produkt. Jeżeli został wybrany więcej niż jeden produkt kwotę należy wyliczyć dla jednego określonego produktu, tj. kwota wpisana przez użytkownika * procent inwestycji danego produktu. Jeżeli został użyty kod rabatowy wartość price należy obniżyć o wartość z pola discount.
-      quantity: 1
+      quantity: 1,
+      unit_price: [CENA JEDNOSTKI] // zmienna przekazująca cenę jednostki danego produktu
     }
     ]
   }
@@ -202,6 +207,7 @@ dataLayer.push({
     currency: "PLN", // pole obowiązkowe
     value: 100.00, // zmienna przekazująca kwotę inwestycji liczona jako price * quantity. Pole obowiązkowe
     coupon: "[NAZWA UŻYTEGO KODU SPECJALNEGO]", // zmienna przekazująca nazwę kodu specjalnego uzupełnionego przez użytkownika
+    step: "[KROK ŚCIEŻKI]", // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
     items: [
     {
       item_id: "SKU_12345", // id produktu, jeżeli jest dostępne - pole nieobowiązkowe
@@ -210,14 +216,14 @@ dataLayer.push({
       index: 0, // numer produktu na listingu
       item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. IKE
       item_category: "[NAZWA KATEGORII]", // zmienna przekazująca nazwę kategorii produktu, np. Fundusz cyklu życia
-      item_category2: "[NAZWA KATEGORII 2]", // zmienna przekazująca nazwę kategorii 2 produktu, jeżeli jest dostępna
-      item_category3: "[NAZWA KATEGORII 3]", // zmienna przekazująca nazwę kategorii 3 produktu, jeżeli jest dostępna
-      item_category4: "[NAZWA KATEGORII 4]", // zmienna przekazująca nazwę kategorii 4 produktu, jeżeli jest dostępna
-      item_category5: "[NAZWA KATEGORII 5]", // zmienna przekazująca nazwę kategorii 5 produktu, jeżeli jest dostępna
+      item_category2: "[TYP FUNDUSZU]", // zmienna przekazująca typ funduszu wybranego produktu, np. "Cyklu życia", "Krótkoterm. instrum. Dłużnych",
+      "Obligacyjny"
+      item_category3: "[POZIOM RYZYKA]", // zmienna przekazująca poziom ryzyka wybranego produktu, np. "Niskie", "Średnioniskie"
       item_list_id: "123", // id listingu, jeżeli jest dostępne
       item_list_name: "[NAZWA KATEGORII FUNDUSZU/PORTFELA]", // zmienna przekazująca nazwę kategorii funduszu, którego dotyczy listing, np. IKE
       price: 100.00, // zmienna przekazująca kwotę inwestycji w dany produkt. Jeżeli został wybrany więcej niż jeden produkt kwotę należy wyliczyć dla jednego określonego produktu, tj. kwota wpisana przez użytkownika * procent inwestycji danego produktu. Jeżeli został użyty kod rabatowy wartość price należy obniżyć o wartość z pola discount.
-      quantity: 1
+      quantity: 1,
+      unit_price: [CENA JEDNOSTKI] // zmienna przekazująca cenę jednostki danego produktu
     }
     ]
   }
@@ -238,6 +244,7 @@ dataLayer.push({
     currency: "PLN", // pole obowiązkowe
     value: 100.00, // zmienna przekazująca kwotę inwestycji liczona jako price * quantity. Pole obowiązkowe
     coupon: "[NAZWA UŻYTEGO KODU SPECJALNEGO]", // zmienna przekazująca nazwę kodu specjalnego uzupełnionego przez użytkownika
+    step: "[KROK ŚCIEŻKI]", // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
     items: [
     {
       item_id: "SKU_12345", // id produktu, jeżeli jest dostępne
@@ -246,14 +253,14 @@ dataLayer.push({
       index: 0, // numer produktu na listingu
       item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. IKE
       item_category: "[NAZWA KATEGORII]", // zmienna przekazująca nazwę kategorii produktu, np. Fundusz cyklu życia
-      item_category2: "[NAZWA KATEGORII 2]", // zmienna przekazująca nazwę kategorii 2 produktu, jeżeli jest dostępna
-      item_category3: "[NAZWA KATEGORII 3]", // zmienna przekazująca nazwę kategorii 3 produktu, jeżeli jest dostępna
-      item_category4: "[NAZWA KATEGORII 4]", // zmienna przekazująca nazwę kategorii 4 produktu, jeżeli jest dostępna
-      item_category5: "[NAZWA KATEGORII 5]", // zmienna przekazująca nazwę kategorii 5 produktu, jeżeli jest dostępna
+      item_category2: "[TYP FUNDUSZU]", // zmienna przekazująca typ funduszu wybranego produktu, np. "Cyklu życia", "Krótkoterm. instrum. Dłużnych",
+      "Obligacyjny"
+      item_category3: "[POZIOM RYZYKA]", // zmienna przekazująca poziom ryzyka wybranego produktu, np. "Niskie", "Średnioniskie"
       item_list_id: "123", // id listingu, jeżeli jest dostępne
       item_list_name: "[NAZWA KATEGORII FUNDUSZU/PORTFELA]", // zmienna przekazująca nazwę kategorii funduszu, którego dotyczy listing, np. IKE
       price: 100.00, // zmienna przekazująca kwotę inwestycji w dany produkt. Jeżeli został wybrany więcej niż jeden produkt kwotę należy wyliczyć dla jednego określonego produktu, tj. kwota wpisana przez użytkownika * procent inwestycji danego produktu. Jeżeli został użyty kod rabatowy wartość price należy obniżyć o wartość z pola discount.
-      quantity: 1
+      quantity: 1,
+      unit_price: [CENA JEDNOSTKI] // zmienna przekazująca cenę jednostki danego produktu
     }
     ]
   }
@@ -275,6 +282,7 @@ dataLayer.push({
     value: 100.00, // zmienna przekazująca kwotę inwestycji liczona jako price * quantity. Pole obowiązkowe
     currency: "PLN", // pole obowiązkowe
     coupon: "[NAZWA UŻYTEGO KODU SPECJALNEGO]", // zmienna przekazująca nazwę kodu specjalnego uzupełnionego przez użytkownika
+    step: "[KROK ŚCIEŻKI]", // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
     items: [
     {
       item_id: "SKU_12345", // id produktu, jeżeli jest dostępne - pole nieobowiązkowe
@@ -283,14 +291,14 @@ dataLayer.push({
       index: 0, // numer produktu na listingu
       item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. IKE
       item_category: "[NAZWA KATEGORII]", // zmienna przekazująca nazwę kategorii produktu, np. Fundusz cyklu życia
-      item_category2: "[NAZWA KATEGORII 2]", // zmienna przekazująca nazwę kategorii 2 produktu, jeżeli jest dostępna
-      item_category3: "[NAZWA KATEGORII 3]", // zmienna przekazująca nazwę kategorii 3 produktu, jeżeli jest dostępna
-      item_category4: "[NAZWA KATEGORII 4]", // zmienna przekazująca nazwę kategorii 4 produktu, jeżeli jest dostępna
-      item_category5: "[NAZWA KATEGORII 5]", // zmienna przekazująca nazwę kategorii 5 produktu, jeżeli jest dostępna
+      item_category2: "[TYP FUNDUSZU]", // zmienna przekazująca typ funduszu wybranego produktu, np. "Cyklu życia", "Krótkoterm. instrum. Dłużnych",
+      "Obligacyjny"
+      item_category3: "[POZIOM RYZYKA]", // zmienna przekazująca poziom ryzyka wybranego produktu, np. "Niskie", "Średnioniskie"
       item_list_id: "123", // id listingu, jeżeli jest dostępne
       item_list_name: "[NAZWA KATEGORII FUNDUSZU/PORTFELA]", // zmienna przekazująca nazwę kategorii funduszu, którego dotyczy listing, np. IKE
       price: 100.00, // zmienna przekazująca kwotę inwestycji w dany produkt. Jeżeli został wybrany więcej niż jeden produkt kwotę należy wyliczyć dla jednego określonego produktu, tj. kwota wpisana przez użytkownika * procent inwestycji danego produktu. Jeżeli został użyty kod rabatowy wartość price należy obniżyć o wartość z pola discount.
-      quantity: 1
+      quantity: 1,
+      unit_price: [CENA JEDNOSTKI] // zmienna przekazująca cenę jednostki danego produktu
     }
     ]
   }
