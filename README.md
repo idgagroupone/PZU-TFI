@@ -96,7 +96,7 @@ dataLayer.push({
   event: "view_item",
   ecommerce: {
     currency: "PLN", // pole obowiązkowe
-    value: 00.00, // pole obowiązkowe
+    value: 00.00, // zmienna przekazująca kwotę inwestycji. Pole obowiązkowe
     step: "[KROK ŚCIEŻKI]", // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
     items: [
     {
@@ -131,7 +131,7 @@ dataLayer.push({
   event: "add_to_cart",
   ecommerce: {
     currency: "PLN", // pole obowiązkowe
-    value: 100.00, // zmienna przekazująca kwotę inwestycji liczona jako price * quantity. Pole obowiązkowe
+    value: 100.00, // zmienna przekazująca kwotę inwestycji. Pole obowiązkowe
     step: "[KROK ŚCIEŻKI]", // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
     items: [
     {
@@ -167,7 +167,7 @@ dataLayer.push({
   event: "view_cart",
   ecommerce: {
     currency: "PLN", // pole obowiązkowe
-    value: 100.00, // zmienna przekazująca kwotę inwestycji liczona jako price * quantity. Pole obowiązkowe
+    value: 100.00, // zmienna przekazująca kwotę inwestycji. Pole obowiązkowe
     step: "[KROK ŚCIEŻKI]", // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
     items: [
     {
@@ -205,7 +205,7 @@ dataLayer.push({
   event: "begin_checkout",
   ecommerce: {
     currency: "PLN", // pole obowiązkowe
-    value: 100.00, // zmienna przekazująca kwotę inwestycji liczona jako price * quantity. Pole obowiązkowe
+    value: 100.00, // zmienna przekazująca kwotę inwestycji. Pole obowiązkowe
     coupon: "[NAZWA UŻYTEGO KODU SPECJALNEGO]", // zmienna przekazująca nazwę kodu specjalnego uzupełnionego przez użytkownika
     step: "[KROK ŚCIEŻKI]", // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
     items: [
@@ -242,7 +242,7 @@ dataLayer.push({
   event: "add_shipping_info",
   ecommerce: {
     currency: "PLN", // pole obowiązkowe
-    value: 100.00, // zmienna przekazująca kwotę inwestycji liczona jako price * quantity. Pole obowiązkowe
+    value: 100.00, // zmienna przekazująca kwotę inwestycji. Pole obowiązkowe
     coupon: "[NAZWA UŻYTEGO KODU SPECJALNEGO]", // zmienna przekazująca nazwę kodu specjalnego uzupełnionego przez użytkownika
     step: "[KROK ŚCIEŻKI]", // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
     items: [
@@ -279,7 +279,7 @@ dataLayer.push({
   event: "purchase",
   ecommerce: {
     transaction_id: "T_12345", // zmienna przekazująca numer zamówienia - pole obowiązkowe
-    value: 100.00, // zmienna przekazująca kwotę inwestycji liczona jako price * quantity. Pole obowiązkowe
+    value: 100.00, // zmienna przekazująca kwotę inwestycji. Pole obowiązkowe
     currency: "PLN", // pole obowiązkowe
     coupon: "[NAZWA UŻYTEGO KODU SPECJALNEGO]", // zmienna przekazująca nazwę kodu specjalnego uzupełnionego przez użytkownika
     step: "[KROK ŚCIEŻKI]", // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
