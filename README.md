@@ -535,5 +535,150 @@ dataLayer.push({
 ```
 
 
+### 13) kliknięcie w przycisk z filtrem
+Prośba o wywołanie kodu na kliknięcie w pole z filtrem na stronach ze ścieżką, gdzie przycisk jest dostępny
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/2564d68d-62c4-4af4-983c-0df53c6e5a6f)
+
+
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_button_FILTR",
+  "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca kliknięty tekst, np "Od 0% do 25% funduszy akcyjnych w portfelu"
+  "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, tu "Poznaj nasze portfele modelowe"
+  "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka, tu "Portfel modelowy"
+  "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, tu "Portfel modelowy"
+  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+});
+```
+
+
+### 14) kliknięcie w przycisk "ZBUDUJ PORTFEL SAMODZIELNIE"
+Prośba o wywołanie kodu na kliknięcie w przycisk "ZBUDUJ PORTFEL SAMODZIELNIE" na stronach ze ścieżką, gdzie przycisk jest dostępny
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/508f534a-c001-4a9e-bf29-0bc09a6014b1)
+
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_button_ZBUDUJ",
+  "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca kliknięty tekst, tu "ZBUDUJ PORTFEL SAMODZIELNIE"
+  "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, tu "Poznaj nasze portfele modelowe"
+  "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka, tu "Portfel modelowy"
+  "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, tu "Portfel modelowy"
+  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+});
+```
+
+### 15) kliknięcie w dokument do pobrania
+Prośba o wywołanie kodu na kliknięcie w dokument, który chcemy pobrać na stronach ze ścieżką, gdzie przycisk jest dostępny
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/0997c2f0-2d8e-4b3e-bc8d-842cc3078be5)
+
+
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_download",
+  "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca kliknięty tekst, np "Dokument zawierający kluczowe informacje dla subfunduszu"
+  "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, tu "Karta funduszy indeksowych"
+  "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "inPZU Inwestycji Ostrożnych"
+  "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka, tu "Fundusz indeksowy"
+  "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, tu "Fundusz indeksowy"
+  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+});
+```
+
+### 16) kliknięcie w przycisk "SZCZEGÓŁY" na stronach ze ścieżką, gdzie przycisk jest dostępny
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/510c4740-e208-4a14-9982-684c5f27f0e9)
+
+
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_button_SZCZEGOLY",
+  "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca nazwę produktu, którego dotyczy kliknięty tekst, np "inPZU Obligacje Polskie"
+  "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, tu "Karta funduszy indeksowych"
+  "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "inPZU Inwestycji Ostrożnych"
+  "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka, tu "Fundusz indeksowy"
+  "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, tu "Fundusz indeksowy"
+  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+});
+```
+
+### 17) kliknięcie w przycisk "ZALOGUJ" na stronie logowania
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/4bcd7481-83cf-4b7b-95c1-ef272e5285df)
+
+
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_button_LOGIN",
+  "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca kliknięty tekst, tu "ZALOGUJ"
+  "section": "[NAZWA SEKCJI]" // zmienna przekazująca nazwę sekcji, tu "Strona logowania"
+});
+```
+
+### 18) kliknięcie w przycisk "Nie pamiętam loginu lub hasła" na stronie logowania
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/b8728f3f-a282-4c9e-ad1b-5b6fd86f3ada)
+
+
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_button_LOGIN",
+  "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca kliknięty tekst, tu "Nie pamiętam loginu lub hasła"
+  "section": "[NAZWA SEKCJI]" // zmienna przekazująca nazwę sekcji, tu "Strona logowania"
+});
+```
+
+### 19) kliknięcie w przycisk "Login.gov.pl" na stronie logowania
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/d5808a2f-42ac-4aef-94eb-af10662cd982)
+
+
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_button_LOGIN",
+  "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca kliknięty tekst, tu "Login.gov.pl"
+  "section": "[NAZWA SEKCJI]" // zmienna przekazująca nazwę sekcji, tu "Strona logowania"
+});
+```
+
+### 20) kliknięcie w przycisk "PIERWSZE LOGOWANIE" na stronie logowania
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/1137e29d-77f6-417e-8047-088deedc20b1)
+
+
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_button_LOGIN",
+  "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca kliknięty tekst, tu "PIERWSZE LOGOWANIE"
+  "section": "[NAZWA SEKCJI]" // zmienna przekazująca nazwę sekcji, tu "Strona logowania"
+});
+```
+
+### 21) kliknięcie w przycisk "Zobacz instrukcję" na stronie logowania
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/0ebcdd7c-7f54-4ea4-9e15-f6c4249ae0ff)
+
+
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_button_LOGIN",
+  "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca kliknięty tekst, tu "Zobacz instrukcję"
+  "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, tu "Strona logowania"
+  "product": "[NAZWA PRODUKTU]" // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, tu "Aktywacja dostępu" lub "Pierwsze logowanie"
+});
+```
+
+
 New File at / · idgagroupone/PZU-TFI
 
