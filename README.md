@@ -475,7 +475,64 @@ dataLayer.push({
 });
 ```
 
+### 10) kliknięcie w przycisk "DODAJ"
+Prośba o wywołanie kodu na kliknięcie w przycisk "DODAJ" na stronach ze ścieżką, gdzie przycisk jest dostępny
 
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/6637a7f8-8d9a-4f58-a07b-f26b18e72b7f)
+
+
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_button_DODAJ",
+  "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca kliknięty tekst, tu "DODAJ"
+  "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, tu "Podaj kwotę"
+  "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "inPZU Puls Życia 2025", "PZU Globalny Obligacji Korporacyjnych"
+  "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "Fundusze indeksowe i cyklu życia"
+  "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, np. "Fundusz Cyklu Życia", "Fundusz indeksowy"
+  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+});
+```
+
+
+### 11) kliknięcie w przycisk "POTWIERDŹ I PRZEJDŹ DO WERYFIKACJI TOŻSAMOŚCI"
+Prośba o wywołanie kodu na kliknięcie w przycisk "POTWIERDŹ I PRZEJDŹ DO WERYFIKACJI TOŻSAMOŚCI" na stronach ze ścieżką, gdzie przycisk jest dostępny
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/c632b293-ca99-42b0-8064-1e93a8e2cd61)
+
+
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_button_POTWIERDZ",
+  "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca kliknięty tekst, tu "POTWIERDŹ I PRZEJDŹ DO WERYFIKACJI TOŻSAMOŚCI"
+  "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, tu "Sprawdź podsumowanie"
+  "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "inPZU Puls Życia 2025", "PZU Globalny Obligacji Korporacyjnych"
+  "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "Fundusze indeksowe i cyklu życia"
+  "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, np. "Fundusz Cyklu Życia", "Fundusz indeksowy"
+  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+});
+```
+
+
+### 12) kliknięcie w przycisk "GOTOWE"
+Prośba o wywołanie kodu na kliknięcie w przycisk "GOTOWE" po poprawnym zatwierdzeniu kodu sms na stronach ze ścieżką, gdzie przycisk jest dostępny
+
+![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/f503928f-b20e-484a-99a1-409889af506e)
+
+
+``` javascript
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "event": "click_button_GOTOWE",
+  "click_text": "[NAZWA TEKSTU]", //zmienna przekazująca kliknięty tekst, tu "GOTOWE"
+  "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, tu "Sprawdź podsumowanie"
+  "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "inPZU Puls Życia 2025", "PZU Globalny Obligacji Korporacyjnych"
+  "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "Fundusze indeksowe i cyklu życia"
+  "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, np. "Fundusz Cyklu Życia", "Fundusz indeksowy"
+  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+});
+```
 
 
 New File at / · idgagroupone/PZU-TFI
