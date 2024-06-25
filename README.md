@@ -313,9 +313,7 @@ ___
 ## EVENTY W STRUKTURZE NIE ECOMMERCE
 
 ### 1) wybór odpowiedzi "TAK" na formularzu
-Prośba o wywołanie kodu na kliknięcie w przycisk "TAK" w odpowiedzi na pytanie "Czy posiadasz już konto w innej instytucji finansowej?" na stronach:
-* inpzu.pl/tfi/ikze-wniosek
-* inpzu.pl/tfi/ike-wniosek
+Prośba o wywołanie kodu na kliknięcie w przycisk "TAK" w odpowiedzi na pytanie "Czy posiadasz już konto w innej instytucji finansowej?" na stronach ze ścieżką, gdzie przycisk jest dostępny
 
 ![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/f1851de7-4d2b-429d-b05e-4d0286149301)
 
@@ -333,9 +331,7 @@ dataLayer.push({
 ```
 
 ### 2) wybór odpowiedzi "NIE" na formularzu
-Prośba o wywołanie kodu na kliknięcie w przycisk "NIE" w odpowiedzi na pytanie "Czy posiadasz już konto w innej instytucji finansowej?" na stronach:
-* inpzu.pl/tfi/ikze-wniosek
-* inpzu.pl/tfi/ike-wniosek
+Prośba o wywołanie kodu na kliknięcie w przycisk "NIE" w odpowiedzi na pytanie "Czy posiadasz już konto w innej instytucji finansowej?" na stronach ze ścieżką, gdzie przycisk jest dostępny
 
 ![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/f1851de7-4d2b-429d-b05e-4d0286149301)
 
@@ -353,9 +349,7 @@ dataLayer.push({
 ```
 
 ### 3) wybór odpowiedzi "TAK, PRZENOSZĘ" na formularzu
-Prośba o wywołanie kodu na kliknięcie w przycisk "TAK, PRZENOSZĘ" w odpowiedzi na pytanie "Czy chcesz przenieść z innej instytucji finansowej?" na stronach:
-* inpzu.pl/tfi/ikze-wniosek
-* inpzu.pl/tfi/ike-wniosek
+Prośba o wywołanie kodu na kliknięcie w przycisk "TAK, PRZENOSZĘ" w odpowiedzi na pytanie "Czy chcesz przenieść z innej instytucji finansowej?" na stronach ze ścieżką, gdzie przycisk jest dostępny
 
 ![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/09073a89-3cd6-471a-bf9c-cdce73c7f764)
 
@@ -372,10 +366,7 @@ dataLayer.push({
 ```
 
 ### 4) wybór odpowiedzi "NIE, NIE PRZENOSZĘ" na formularzu
-Prośba o wywołanie kodu na kliknięcie w przycisk "NIE, NIE PRZENOSZĘ" w odpowiedzi na pytanie "Czy chcesz przenieść z innej instytucji finansowej?" na stronach:
-* inpzu.pl/tfi/ikze-wniosek
-* inpzu.pl/tfi/ike-wniosek
-
+Prośba o wywołanie kodu na kliknięcie w przycisk "NIE, NIE PRZENOSZĘ" w odpowiedzi na pytanie "Czy chcesz przenieść z innej instytucji finansowej?" na stronach ze ścieżką, gdzie przycisk jest dostępny
 ![image](https://github.com/idgagroupone/PZU-TFI/assets/171781719/09073a89-3cd6-471a-bf9c-cdce73c7f764)
 
 ``` javascript
