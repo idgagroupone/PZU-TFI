@@ -137,6 +137,8 @@ dataLayer.push({
     {
       item_id: "SKU_12345", // id produktu, jeżeli jest dostępne
       item_name: "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, dla którego została wyświetlona karta produktu np. inPZU Puls Życia 2025 - pole obowiązkowe
+      coupon: "[NAZWA UŻYTEGO KODU SPECJALNEGO]", // zmienna przekazująca nazwę kodu specjalnego uzupełnionego przez użytkownika
+      discount: 00.00, // kwota udzielonego rabatu związanego z zastosowaniem kodu specjalnego
       index: 0, // numer produktu na listingu
       item_brand: "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu wybranego produktu, np. IKE
       item_category: "[NAZWA KATEGORII]", // zmienna przekazująca nazwę kategorii produktu, np. Fundusz cyklu życia
