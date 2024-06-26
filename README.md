@@ -193,7 +193,7 @@ dataLayer.push({
 ```
 
 
-### 6) Rozpoczęcie procesu checkout - wywołanie eventu begin_checout
+### 6) Rozpoczęcie procesu checkout - wywołanie eventu begin_checkout
 Prośba o wywołanie kodu na wyświetlenie strony z rozpoczęciem procesu checkout na trzecim kroku ścieżki "Wypełnij oświadczenia i ankietę".
 W przypadku, gdy został wybrany więcej niż jeden produkt prośba o dodanie go do tablicy items, jak w przypadku np. view_item_list.
 
@@ -278,14 +278,14 @@ dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "purchase",
   ecommerce: {
-    transaction_id: "T_12345", // zmienna przekazująca numer zamówienia - pole obowiązkowe
+    transaction_id: "T_12345", // zmienna przekazująca numer zamówienia. Pole obowiązkowe
     value: 100.00, // zmienna przekazująca kwotę inwestycji. Pole obowiązkowe
-    currency: "PLN", // pole obowiązkowe
+    currency: "PLN", // Pole obowiązkowe
     coupon: "[NAZWA UŻYTEGO KODU SPECJALNEGO]", // zmienna przekazująca nazwę kodu specjalnego uzupełnionego przez użytkownika
     step: "[KROK ŚCIEŻKI]", // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
     items: [
     {
-      item_id: "SKU_12345", // id produktu, jeżeli jest dostępne - pole nieobowiązkowe
+      item_id: "SKU_12345", // id produktu, jeżeli jest dostępne
       item_name: "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, dla którego została wyświetlona karta produktu np. inPZU Puls Życia 2025 - pole obowiązkowe
       discount: 00.00, // kwota udzielonego rabatu związanego z zastosowaniem kodu specjalnego
       index: 0, // numer produktu na listingu
@@ -322,11 +322,11 @@ Prośba o wywołanie kodu na kliknięcie w przycisk "TAK" w odpowiedzi na pytani
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({
   "event": "click_button_TAK",
-  "click_text": "[NAZWA TESKTU], //zmienna przekazująca kliknięty tekst, tu: "TAK"
+  "click_text": "[NAZWA TESKTU]", // zmienna przekazująca kliknięty tekst, tu: "TAK"
   "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, czyli "Czy posiadasz już IKE w innej instytucji finansowej?" lub "Czy posiadasz już IKZE w innej instytucji finansowej?"
   "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, czyli np: "IKE" lub "IKZE"
   "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "IKZE"
-  "step": "0a", 
+  "step": "[krok ścieżki]" // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
 });
 ```
 
@@ -340,11 +340,11 @@ Prośba o wywołanie kodu na kliknięcie w przycisk "NIE" w odpowiedzi na pytani
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({
   "event": "click_button_NIE",
-  "click_text": "[NAZWA TESKTU], //zmienna przekazująca kliknięty tekst, tu: "NIE"
+  "click_text": "[NAZWA TESKTU]", // zmienna przekazująca kliknięty tekst, tu: "NIE"
   "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, czyli "Czy posiadasz już IKE w innej instytucji finansowej?" lub "Czy posiadasz już IKZE w innej instytucji finansowej?"
   "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, czyli np: "IKE" lub "IKZE"
   "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "IKZE"
-  "step": "0a"
+  "step": "[krok ścieżki]" // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
 });
 ```
 
@@ -361,7 +361,7 @@ dataLayer.push({
   "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, czyli "Czy chcesz przenieść IKE z innej instytucji finansowej?" lub "Czy chcesz przenieść IKZE z innej instytucji finansowej?"
   "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, czyli np: "IKE" lub "IKZE"
   "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "IKZE"
-  "step": "0a"
+  "step": "[krok ścieżki]" // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
 });
 ```
 
@@ -377,7 +377,7 @@ dataLayer.push({
   "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, czyli "Czy chcesz przenieść IKE z innej instytucji finansowej?" lub "Czy chcesz przenieść IKZE z innej instytucji finansowej?"
   "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, czyli np: "IKE" lub "IKZE"
   "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "IKZE"
-  "step": "0a"
+  "step": "[krok ścieżki]" // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
 });
 ```
 
@@ -395,7 +395,7 @@ dataLayer.push({
   "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "IKE", "Portfel Obligacyjny"
   "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "Portfel modelowy"
   "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, np. "Fundusz Cyklu Życia", "Fundusz indeksowy"
-  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+  "step": "[krok ścieżki]" // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
 });
 ```
 
@@ -414,7 +414,7 @@ dataLayer.push({
   "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "inPZU Puls Życia 2025", "Portfel Obligacyjny"
   "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "Portfel modelowy"
   "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, np. "Fundusz Cyklu Życia", "Fundusz indeksowy"
-  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+  "step": "[krok ścieżki]" // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
 });
 ```
 
@@ -432,7 +432,7 @@ dataLayer.push({
   "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "inPZU Puls Życia 2025", "PZU Globalny Obligacji Korporacyjnych"
   "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "Fundusze indeksowe i cyklu życia"
   "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, np. "Fundusz Cyklu Życia", "Fundusz indeksowy"
-  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+  "step": "[krok ścieżki]" // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
 });
 ```
 
@@ -451,7 +451,7 @@ dataLayer.push({
   "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "inPZU Puls Życia 2025", "PZU Globalny Obligacji Korporacyjnych"
   "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "Fundusze indeksowe i cyklu życia"
   "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, np. "Fundusz Cyklu Życia", "Fundusz indeksowy"
-  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+  "step": "[krok ścieżki]" // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
 });
 ```
 
@@ -470,7 +470,7 @@ dataLayer.push({
   "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "inPZU Puls Życia 2025", "PZU Globalny Obligacji Korporacyjnych"
   "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "Fundusze indeksowe i cyklu życia"
   "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, np. "Fundusz Cyklu Życia", "Fundusz indeksowy"
-  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+  "step": "[krok ścieżki]" // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
 });
 ```
 
@@ -489,7 +489,7 @@ dataLayer.push({
   "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "inPZU Puls Życia 2025", "PZU Globalny Obligacji Korporacyjnych"
   "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "Fundusze indeksowe i cyklu życia"
   "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, np. "Fundusz Cyklu Życia", "Fundusz indeksowy"
-  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+  "step": "[krok ścieżki]" // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
 });
 ```
 
@@ -509,7 +509,7 @@ dataLayer.push({
   "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "inPZU Puls Życia 2025", "PZU Globalny Obligacji Korporacyjnych"
   "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "Fundusze indeksowe i cyklu życia"
   "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, np. "Fundusz Cyklu Życia", "Fundusz indeksowy"
-  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+  "step": "[krok ścieżki]" // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
 });
 ```
 
@@ -529,7 +529,7 @@ dataLayer.push({
   "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "inPZU Puls Życia 2025", "PZU Globalny Obligacji Korporacyjnych"
   "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka np: "IKE" lub "Fundusze indeksowe i cyklu życia"
   "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, np. "Fundusz Cyklu Życia", "Fundusz indeksowy"
-  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+  "step": "[krok ścieżki]" // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
 });
 ```
 
@@ -548,7 +548,7 @@ dataLayer.push({
   "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, tu "Poznaj nasze portfele modelowe"
   "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka, tu "Portfel modelowy"
   "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, tu "Portfel modelowy"
-  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+  "step": "[krok ścieżki]" // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
 });
 ```
 
@@ -566,7 +566,7 @@ dataLayer.push({
   "section": "[NAZWA SEKCJI]", // zmienna przekazująca nazwę sekcji, tu "Poznaj nasze portfele modelowe"
   "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka, tu "Portfel modelowy"
   "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, tu "Portfel modelowy"
-  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+  "step": "[krok ścieżki]" // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
 });
 ```
 
@@ -585,7 +585,7 @@ dataLayer.push({
   "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "inPZU Inwestycji Ostrożnych"
   "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka, tu "Fundusz indeksowy"
   "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, tu "Fundusz indeksowy"
-  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+  "step": "[krok ścieżki]" // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
 });
 ```
 
@@ -603,7 +603,7 @@ dataLayer.push({
   "product": "[NAZWA PRODUKTU]", // zmienna przekazująca nazwę produktu, którego dotyczy wybrana ścieżka, np: "inPZU Inwestycji Ostrożnych"
   "brand": "[NAZWA BRANDU]", // zmienna przekazująca nazwę brandu, którego dotyczy wybrana ścieżka, tu "Fundusz indeksowy"
   "category": [NAZWA KATEGORII PRODUKTU], // zmienna przekazująca nazwę kategorii produktu, którego dotyczy wybrana ścieżka, tu "Fundusz indeksowy"
-  "step": "[krok ścieżki"] // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
+  "step": "[krok ścieżki]" // zmienna przekazująca krok ścieżki, na którym dany event jest wywołany
 });
 ```
 
